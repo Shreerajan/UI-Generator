@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "prismjs/themes/prism-tomorrow.css";
+
+@theme inline {
+  --color-background: hsl(220 13% 10%);
+  --color-foreground: hsl(220 13% 90%);
+
+  --color-card: hsl(220 13% 13%);
+  --color-card-foreground: hsl(220 13% 90%);
+
+  --color-popover: hsl(220 13% 13%);
+  --color-popover-foreground: hsl(220 13% 90%);
+
+  --color-primary: hsl(210 100% 50%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  --color-secondary: hsl(220 13% 20%);
+  --color-secondary-foreground: hsl(220 13% 90%);
+
+  --color-muted: hsl(220 13% 20%);
+  --color-muted-foreground: hsl(220 13% 60%);
+
+  --color-accent: hsl(210 100% 50%);
+  --color-accent-foreground: hsl(0 0% 100%);
+
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  --color-border: hsl(220 13% 20%);
+  --color-input: hsl(220 13% 20%);
+  --color-ring: hsl(210 100% 50%);
+
+  --radius: 0.375rem;
+
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom Scrollbar for a technical feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(220 13% 10%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220 13% 25%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220 13% 35%);
+}

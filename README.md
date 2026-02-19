@@ -62,7 +62,7 @@ To ensure absolute determinism and safety:
    ```
 
 3. **Open in Browser**
-   Navigate to `http://localhost:5000`
+   Navigate to `http://localhost:8000`
 
 ## 🧪 Usage
 
